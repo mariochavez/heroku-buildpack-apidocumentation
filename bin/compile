@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir> <env-dir>
+
+### Configure directories
+
+BUILD_DIR=${1:-}
+CACHE_DIR=${2:-}
+ENV_DIR=${3:-}
+
+mkdir -p "$BUILD_DIR/public/api/"
+bin/rails api:documentation

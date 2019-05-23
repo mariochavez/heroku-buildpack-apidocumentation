@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# this pack is for Rails app with Blueprint API documentation
+if [ -f $1/docs/api/documentation.md.erb ]; then
+  echo "Blueprint API Documentation"
+  exit 0
+else
+  exit 1
+fi
