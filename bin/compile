@@ -8,4 +8,4 @@ CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 
 mkdir -p "$BUILD_DIR/public/api/"
-bin/rails api:documentation
+rake api:documentation
