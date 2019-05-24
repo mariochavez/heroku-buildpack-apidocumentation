@@ -7,6 +7,4 @@ BUILD_DIR=${1:-}
 CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 
-aglio --help
-mkdir -p "$BUILD_DIR/public/api/"
-bundle exec rails api:documentation
+cd $build_dir && bundle exec rake api:documentation
