@@ -9,4 +9,4 @@ ENV_DIR=${3:-}
 
 aglio --help
 mkdir -p "$BUILD_DIR/public/api/"
-bundle exec rail api:documentation
+bundle exec rails api:documentation
